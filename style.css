@@ -1,0 +1,90 @@
+
+p{
+    font-size: small;
+}
+body{
+    padding: 2%;
+    /*background-image:url(myfarog-cover.jpg);
+    background-size: cover;
+    background-color: #bfa58a;*/
+}
+
+label{
+    margin-right: 5px;
+    min-width:30px;
+    font-size: small;
+}
+
+
+.col-1 input{
+    width: 58%;
+}
+.col-2 input{
+    width: 58%;
+}
+.col-3 input{
+    width: 74%;
+}
+select{
+    padding:2px
+}
+table{
+    font-size: small;
+}
+.firstcol-weapon input {
+    width: 100% !important;
+}
+.firstcol-armor input{
+    width: 100% !important;
+}
+#container-all{
+    margin:0 auto;
+    min-width:768px;
+}
+.attrn{
+    width:22px !important;
+}
+.attributename label{
+    width: 60px;
+}
+.attributename label{
+    width: 60px;
+}
+.firstcol{
+ 
+    text-align: left;
+}
+.firstlabel{
+    width:42px;
+}
+.skillname{
+    width: 190px;
+}
+
+th,td {
+    min-width: 28px;
+    text-align: center;
+}
+#notes{
+    width:100%
+}
+.condition-morale-encumbrance{
+    min-width: 77px;
+}
+input[type="text"]{
+ width: 70%;    
+}
+textarea {
+    width: 100%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

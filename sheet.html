@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MYFAROG 4.0 Character sheet</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container-all">
+<h1>MYFAROG Character Sheet</h1>
+<div class="row">
+<div class="col-lg-12 col-xl-8">
+<div class="row">
+    <div class="col-3"><label class="firstlabel" for="fname">Name: </label><input type="text" id="fname" name="attr_character_name" title="@{character_name}"></div>
+    <div class="col-2"><label for="fname">Race: </label><input type="text" id="fname" name="attr_race"></div>
+    <div class="col-2"><label for="fname">Sex: </label><select name="sex" id="sex">   <option value="Male">Male</option>  <option value="Female">Female</option></select></div>
+    <div class="col-2"><label for="fname">Role: </label><input type="text" id="fname" name="attr_role"></div>
+    <div class="col-2"><label for="fname">Size: </label><input type="text" id="fname" name="attr_size"></div>
+</div>
+<div class="row">
+    <div class="col-2"><label class="firstlabel" for="fname">Height: </label><input type="text" id="fname" name="fname"></div>
+    <div class="col-2"><label for="fname">Age: </label><input type="text" id="fname" name="attr_age"></div>
+    <div class="col-2"><label for="fname">XP: </label><input type="text" id="fname" name="attr_xp"></div>
+    <div class="col-2"><label for="fname">Level: </label><input type="text" id="fname" name="attr_level"></div>
+    <div class="col-4"><label for="fname">Hamingja: </label><input type="text" id="fname" name="attr_hamingja"></div>
+</div>
+<div class="row">
+    <div class="col-4">
+        
+    </div>
+    <div class="col-8">  
+        
+    </div>    </div>
+<div class="row">
+    <div class="col-2">
+    <table id="table_attr">
+        <strong>Attributes</strong>
+
+        <tr><td class="firstcol attributename"><label>Charisma</label></td><td><input type="number" class="attrn" name="attr_charisma"></td><td> +1</td>
+        <tr><td class="firstcol attributename"><label>Constitution</label></td><td><input type="number" class="attrn" name="attr_constitution"></td><td> +1</td>
+        <tr><td class="firstcol attributename"><label>Dexterity</label></td><td><input type="number" class="attrn" name="attr_dexterity"></td><td> +1</td>
+        <tr><td class="firstcol attributename"><label>Intelligence</label></td><td><input type="number" class="attrn" name="attr_intelligence"></td><td> +1</td>
+        <tr><td class="firstcol attributename"><label>Strength</label></td><td><input type="number" class="attrn" name="attr_strength"></td><td> +1</td>
+        <tr><td class="firstcol attributename"><label>Willpower</label></td><td><input type="number" class="attrn" name="attr_willpower"></td><td> +1</td>
+    </table>
+    <strong>Current Combat Statistics</strong>
+    <table id="table_ov_dv">
+        <tr><th class="firstcol"></th><th></th></tr>
+        <tr><td class="firstcol">OV Mêlée</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">OV Missile</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">DV Mêlée</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">DV Missile</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">Dodging (min +1)</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">MS Penalty</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">Shield DV (MÊ):</td><td><input type="text"></td></tr>
+        <tr><td class="firstcol">Shield DV (MI)</td><td><input type="text"></td></tr>
+    </table>
+</div>
+<div class="col-2">
+    <strong><span title="(= Con + size + racial mod)">Resistance</span></strong>
+    <table>
+        <tr><td class="firstcol">Cold: </td><td><input type="text"></td>
+        <tr><td class="firstcol">Electricity: </td><td><input type="text"></td>
+        <tr><td class="firstcol">Heat: </td><td><input type="text"></td>
+        <tr><td class="firstcol">Mental: </td><td><input type="text"></td>
+        <tr><td class="firstcol">Disease: </td><td><input type="text"></td>
+        <tr><td class="firstcol">Poison: </td><td><input type="text"></td>
+    </table>
+    <strong>Condition</strong>
+    <table>
+        <tr><td class="firstcol condition-morale-encumbrance">Tired: </td><td><input name="status_tired" type="checkbox"></td><td>-1</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Weary: </td><td><input name="status_weary" type="checkbox"></td><td>-2</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Exhausted: </td><td><input name="status_exhausted" type="checkbox"></td><td>-3</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Wet: </td><td><input name="status_wet" type="checkbox"></td><td>+0</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Soaking wet: </td><td><input name="status_soakingwet" type="checkbox"></td><td>-1</td>
+    </table>
+    <strong>Morale</strong>
+    <table>
+        <tr><td class="firstcol condition-morale-encumbrance">Nervous: </td><td><input name="status_tired" type="checkbox"></td><td>-1</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Afraid: </td><td><input name="status_weary" type="checkbox"></td><td>-2</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Fearful: </td><td><input name="status_exhausted" type="checkbox"></td><td>-3</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Terrified: </td><td><input name="status_wet" type="checkbox"></td><td>-4</td>
+        <tr><td class="firstcol condition-morale-encumbrance">Panic: </td><td><input name="status_soakingwet" type="checkbox"></td><td>+1</td>
+    </table>
+
+    </div>
+<div class="col-4"> 
+    <table>
+        <tr><th class="firstcol skillname">Skill (Mod)</th><th>U</th><th>T</th><th>CR</th><th>Type</th><th>Mod</th><th></th></tr>
+        <tr><td class="firstcol skillname">Acrobatics (Dex)</td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Acting (Cha)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Alchemy (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Climbing (Dex)</td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Crafts (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Dancing (Dex)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Dodging <span title="Dex/2">(Dex*)</span></td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Flute Playing (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Foraging (Int)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Fortitude (Wil)</td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Healing (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Lyre Playing (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Mechanics (Dex)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Mêlée (Str)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>CS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Missile (Dex)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>CS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Navigation (Int)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+    </table>
+</div>
+
+<div class="col-4"> 
+    <table>
+        <tr><th class="firstcol skillname">Skill (Mod)</th><th>UT</th><th>T</th><th>CR</th><th>Type</th></tr>
+        <tr><td class="firstcol skillname">Perception (Int)</td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Poetry (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Religious Tradition (Cha)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Riding (Dex)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Rune Lore (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>CS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Seamanship (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Singing (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Social Skills (Cha)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Stamina <span title="8+Con">(Con*)</span></td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Stealth (Dex)</td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Swimming (Con)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Tempo <span title="(40 + [5 * Str]), 30 instead of 40 for Dwarves, Gnomes & Halflings">(Str*)</span></td><td>0</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>MS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Tracking (Int)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">Trickery (Dex)</td><td>-2</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+        <tr><td class="firstcol skillname">World Lore (Int)</td><td>-5</td><td><input name="trainedskill" type="checkbox"></td><td><input name="characterroleskill" type="checkbox"></td><td>SS</td><td>0</td><td><button>Roll</button></td></tr>
+    </table>
+</div>
+</div>
+
+<div class="row">
+<div class="col"> 
+    <strong>Notes</strong><br>
+    <textarea id="notes"></textarea><br>
+    <small>(birthday, special abilities, languages CR advantages, Favourite Deities, known spells, talents, etc.)</small>
+</div>
+<div class="col"> 
+    <strong>Clothes</strong><br>
+    <textarea id="notes"></textarea><br>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 col-xl-4">
+    <div class="row">
+        <div class="col-12">
+        <table>
+            <tr><th>Armour</th><th>MS mod</th><th>DV</th><th>Travelling SP</th><th></th></tr>
+            <tr><td class="firstcol-armor"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+        </table>   
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table>
+                <tr><th class="firstcol-weapon">Mêlée Weapon</th><th>OV</th><th>DV</th><th>Damage</th><th>Min. Str</th><th>Cut</th><th>Shock</th><th></th></th>
+                <tr><td class="firstcol-weapon">Unarmed</td><td>-2</td><td>-5</td><td>1</td><td>-4</td><td>6</td><td>2</td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+            </table>
+        </div>    
+        <div class="col-12">
+            <table>
+                <tr><th class="firstcol-weapon">Missile Weapon</th><th>Notes</th><th>OV</th><th>Base range</th><th>Damage</th><th>Min. Str</th><th>Cut</th><th>Shock</th><th></th></th>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+                <tr><td class="firstcol-weapon"><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button>Roll</button></td></tr>
+            </table>
+        </div>
+    
+            
+    </div>0   
+    <div class="row">
+        <div class="col-12">
+        <table>
+        <tr><td><strong>Encumbrance</strong></td><td class="firstcol condition-morale-encumbrance"><span title="(STR * 4 lbs)">Light load (0)</span></td><td><input name="status_tired" type="checkbox"></td><td class="firstcol condition-morale-encumbrance"><span title="(STR * 8 lbs)">Medium load (-1) </span</td><td><input name="status_tired" type="checkbox"></td><td class="firstcol condition-morale-encumbrance"><span title="(STR * 12 lbs)">Heavy load (-3)</span></td><td><input name="status_tired" type="checkbox"></td>
+        
+    </table>
+    </div>
+</div>
+    <div class="row">
+    <div class="col-12">
+    <table>
+        <tr><td>Belt (8oz)</td><td>Belt pouch (32oz)</td><td>On shoulders</td><td>Quiver: </td></tr>
+        <tr><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td></tr>
+    </table>    
+</div>
+</div>
+
+<div class="row">
+    <div class="col-6">Backpack (54lbs):<br> <textarea type="text"></textarea></div>
+    <div class="col-6">Sack (on shoulder) (27lbs):<br> <textarea type="text"></textarea></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+
+</body>
+</html>
