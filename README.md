@@ -3,8 +3,8 @@
 Made with bootstrap, will be working on this project occasionally
 
 # TODO
-- [] Sheet layout
-- [] Roll20 functions
-- []
-- []
-- []
+- [ ] Sheet layout
+- [ ] Roll20 functions
+- [ ]
+- [ ]
+- [ ]
